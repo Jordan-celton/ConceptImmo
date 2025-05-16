@@ -1,0 +1,47 @@
+/* src/components/HeroBanner.css */
+.hero-banner {
+    background-image: url('../assets/home_photo.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.hero-overlay {
+    text-align: center;
+    background-color: rgba(0, 31, 63, 0.6);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f0c040;
+}
+
+.hero-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.hero-overlay button {
+    background-color: #f0c040;
+    border: none;
+    color: #001f3f;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-overlay button:hover {
+    background-color: #fff;
+    color: #001f3f;
+}

@@ -1,0 +1,78 @@
+/* src/styles/AerialVideoHighlight.css */
+
+.aerial-video {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.aerial-video h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video-container {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    position: relative;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.video-overlay {
+    background: var(--dark-gray);
+    color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+    transition: background 0.3s;
+}
+
+.video-overlay h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video-overlay p {
+    font-size: 1.1em;
+    color: var(--light-gray);
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video-overlay .btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.video-overlay .btn-primary:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+

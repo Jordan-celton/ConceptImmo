@@ -1,0 +1,112 @@
+/* 🌟 AllProperties Styles */
+
+.all-properties {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.all-properties h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+/* 🏠 Property Card Grid */
+.all-properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* 🏠 Property Card */
+.all-property-card {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--white);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.all-property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* 🖼️ Property Image */
+.all-property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* 📝 Property Details */
+.all-property-details {
+    padding: 15px;
+}
+
+.all-property-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.all-property-details .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.all-property-details .location {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* 📋 Property Types */
+.all-property-types {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.all-property-types li {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .all-property-card img {
+        height: 150px;
+    }
+
+    .all-property-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .all-property-details .price {
+        font-size: 1rem;
+    }
+
+    .all--details .location {
+        font-size: 0.9rem;
+    }
+
+    .all-property-types li {
+        font-size: 0.75rem;
+    }
+}

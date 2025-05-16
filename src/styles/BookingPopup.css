@@ -1,0 +1,70 @@
+/* src/styles/BookingPopup.css */
+.booking-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.booking-popup {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.booking-popup h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.booking-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-popup input,
+.booking-popup select,
+.booking-popup textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-gray);
+    font-size: 1em;
+}
+
+.booking-popup button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-popup button:hover {
+    background-color: var(--primary-color);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}

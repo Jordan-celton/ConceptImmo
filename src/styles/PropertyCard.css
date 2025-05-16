@@ -1,0 +1,65 @@
+/* src/styles/PropertyCard.css */
+
+.property-section {
+    padding: 40px 20px;
+    background-color: var(--light-gray);
+}
+
+.property-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.property-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.property-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.property-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.property-details h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.property-details p {
+    color: var(--dark-gray);
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.property-types {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.property-types li {
+    color: var(--dark-gray);
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}

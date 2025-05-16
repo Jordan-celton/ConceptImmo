@@ -1,0 +1,83 @@
+/* src/styles/GoogleReviews.css */
+
+/* 🎨 Google Reviews Section */
+.google-reviews {
+    background-color: var(--light-gray);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.google-reviews h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+/* 📝 Reviews Slider */
+.review-slide {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.review-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.review h3 {
+    font-size: 1.3em;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-style: italic;
+    color: var(--dark-gray);
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.review span {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 1.1em;
+}
+
+/* 🧭 Swiper Controls */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--secondary-color);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .google-reviews {
+        padding: 40px 20px;
+    }
+
+    .review h3 {
+        font-size: 1.2em;
+    }
+
+    .review p {
+        font-size: 0.9em;
+    }
+
+    .review span {
+        font-size: 1em;
+    }
+}
