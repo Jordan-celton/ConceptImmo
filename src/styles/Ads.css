@@ -1,0 +1,69 @@
+.ads-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.ads-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.filter-bar {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.filter-bar select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.ads-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ad-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.ad-card:hover {
+    transform: scale(1.02);
+}
+
+.ad-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.ad-title {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #333;
+}
+
+.ad-info {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.ad-price {
+    font-weight: bold;
+    color: #0077cc;
+    margin-top: 10px;
+}
